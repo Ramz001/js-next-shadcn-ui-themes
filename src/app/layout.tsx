@@ -86,7 +86,7 @@ interface RootLayoutProps {
 
 export default async function RootLayout({ children }: RootLayoutProps) {
   const cookieStore = await cookies();
-  const currentTheme = cookieStore.get("currentTheme")?.value || "default";
+  const currentTheme = cookieStore.get("currentTheme")?.value || "system";
 
   return (
     <>
